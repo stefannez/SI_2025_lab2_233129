@@ -11,7 +11,7 @@ public class SILab2Test {
                 SILab2.checkCart(null, "7777777777777777"));
         assertTrue(ex1.getMessage().contains("allItems list can't be null!"));
 
-        // Test 2: Тест 2 (item со валидни вредности без попуст)
+        // Тест 2 (item со валидни вредности без попуст)
         Item item2 = new Item("item2", 2, 100, 0.0);
         double result2 = SILab2.checkCart(List.of(item2), "7777777777777777");
         assertEquals(200, result2);
